@@ -10,5 +10,5 @@ package interfaceGrafica;
  * @author ZETSBR
  */
 public class Visual {
-    
+    //isso aqui eh nada, ignore
 }

@@ -27,21 +27,25 @@ public class Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jpPot1 = new javax.swing.JProgressBar();
+        jpPot = new javax.swing.JProgressBar();
         jLabel1 = new javax.swing.JLabel();
         jbLED = new javax.swing.JButton();
         jlLED = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jlBotao = new javax.swing.JLabel();
+        jlPot = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jpPot.setForeground(new java.awt.Color(0, 180, 0));
+        jpPot.setMaximum(5);
 
         jLabel1.setText("Voltagem Potenciometro");
 
         jbLED.setText("LED");
         jbLED.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbLEDActionPerformed(evt);
+                LigarLED(evt);
             }
         });
 
@@ -51,43 +55,48 @@ public class Menu extends javax.swing.JFrame {
 
         jlBotao.setText("shit");
 
+        jlPot.setText("coloque qauntos volts aqui");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3)
+                    .addComponent(jbLED))
+                .addGap(78, 78, 78)
+                .addComponent(jlBotao)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(28, 28, 28))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jlLED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jlLED)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabel1))
-                            .addComponent(jpPot1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3)
-                            .addComponent(jbLED))
-                        .addGap(78, 78, 78)
-                        .addComponent(jlBotao)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                    .addComponent(jpPot, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jlPot)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jpPot1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jpPot, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jlLED))
-                .addGap(41, 41, 41)
+                    .addComponent(jlLED)
+                    .addComponent(jlPot))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addGap(21, 21, 21)
                 .addComponent(jbLED)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jlBotao))
@@ -99,9 +108,9 @@ public class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jbLEDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbLEDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jbLEDActionPerformed
+    private void LigarLED(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LigarLED
+        // LED code here
+    }//GEN-LAST:event_LigarLED
 
     /**
      * @param args the command line arguments
@@ -144,6 +153,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton jbLED;
     private javax.swing.JLabel jlBotao;
     private javax.swing.JLabel jlLED;
-    private javax.swing.JProgressBar jpPot1;
+    private javax.swing.JLabel jlPot;
+    private javax.swing.JProgressBar jpPot;
     // End of variables declaration//GEN-END:variables
 }
