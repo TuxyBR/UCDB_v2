@@ -2,7 +2,8 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
-//isso eh a janela base do rxtx do jeandro como base
+//isso eh a janela base do rxtx do jeandro como base]
+//tentar usar esse como base para o menu em si, ver se da pra usar isso como main
  */
 package interfaceGrafica;
 
@@ -93,7 +94,7 @@ public class Janela extends javax.swing.JFrame {
     private void jBEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBEnviarActionPerformed
         try {
             // Enviando dado.
-            serialServer.enviarDados(jTSaida.getText());
+            serialServer.enviarDados(jTSaida.getText()); // essa eha  entrada na verdade
         } catch (IOException ex) {
             Logger.getLogger(Janela.class.getName()).log(Level.SEVERE, null, ex);
         } catch (InterruptedException ex) {

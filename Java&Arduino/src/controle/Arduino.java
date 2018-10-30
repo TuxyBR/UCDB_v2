@@ -8,6 +8,7 @@ package controle;
 /**
  *
  * @author ZETSBR
+ * tem q fazer coisa depois pra interagir arduino e usb
  */
 public class Arduino {
     
