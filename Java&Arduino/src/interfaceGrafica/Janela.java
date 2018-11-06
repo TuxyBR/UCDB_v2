@@ -27,7 +27,7 @@ public class Janela extends javax.swing.JFrame {
     public Janela() {
         initComponents();
         try {
-            serialServer.Run("COM5", 5);
+            serialServer.Run("COM5", 9600);
         } catch (PortInUseException ex) {
             Logger.getLogger(Janela.class.getName()).log(Level.SEVERE, null, ex);
         }
