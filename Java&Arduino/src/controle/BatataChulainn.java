@@ -9,7 +9,7 @@ package controle;
  *
  * @author alber
  */
-public class BatataC {
+public class BatataChulainn {
     
     public float cuPot (String ser) {
         return Float.parseFloat(ser.substring(0, 4));
