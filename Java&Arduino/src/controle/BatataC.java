@@ -11,15 +11,15 @@ package controle;
  */
 public class BatataC {
     
-    public float cutPot (String ser) {
-        return Float.parseFloat(ser.substring(0, 3));
+    public float cuPot (String ser) {
+        return Float.parseFloat(ser.substring(0, 4));
     }
     
-    public boolean cutLed (String ser) {
+    public boolean cuLed (String ser) {
         return Boolean.parseBoolean(ser.substring(4,5));
     }
     
-    public boolean cutBtn (String ser) {
+    public boolean cuBtn (String ser) {
         return Boolean.parseBoolean(ser.substring(5));
     }
     
