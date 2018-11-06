@@ -16,11 +16,11 @@ public class BatataC {
     }
     
     public boolean cutLed (String ser) {
-        return Boolean.parseBoolean(ser.substring(4,4));
+        return Boolean.parseBoolean(ser.substring(4,5));
     }
     
     public boolean cutBtn (String ser) {
-        return Boolean.parseBoolean(ser.substring(5,5));
+        return Boolean.parseBoolean(ser.substring(5));
     }
     
 }
