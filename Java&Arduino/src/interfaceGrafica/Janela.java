@@ -27,7 +27,7 @@ public class Janela extends javax.swing.JFrame {
     public Janela() {
         initComponents();
         try {
-            serialServer.Run("COM5", 5);
+            serialServer.Run("COM5", 5); // mude aqui dependendo de qual porta usb ela estiver
         } catch (PortInUseException ex) {
             Logger.getLogger(Janela.class.getName()).log(Level.SEVERE, null, ex);
         }
