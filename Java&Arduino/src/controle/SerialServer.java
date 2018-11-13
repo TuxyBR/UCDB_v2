@@ -19,7 +19,7 @@ public class SerialServer implements SerialPortEventListener {
     public InputStream entrada;
     public OutputStream saida;
     public SerialPort porta;
-    public static String leitura = "";
+    public static String leitura = "";//°
     
 
     public Boolean Run(String comName, Integer comNum) throws PortInUseException {
