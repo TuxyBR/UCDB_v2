@@ -21,6 +21,7 @@ public class SerialServer implements SerialPortEventListener {
     public OutputStream saida;
     public SerialPort porta;
     public static String leitura = "";
+    public BatataChulainn funcoes;
 
     public Boolean Run(String comName, Integer comNum) throws PortInUseException {
 
@@ -29,7 +30,7 @@ public class SerialServer implements SerialPortEventListener {
             COM = CommPortIdentifier.getPortIdentifier(comName);
             porta = (SerialPort) COM.open(comName, comNum);
         } catch (NoSuchPortException | PortInUseException ex) {
-            //Logger.getLogger(SerialServer.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(SerialServer.class.getName()).log(Level.SEVERE, null, ex)°;
             System.out.println(comName + " :  Erro Ao Abri porta Serial **********: " + ex.getMessage());
             return false;
         }
@@ -109,7 +110,10 @@ public class SerialServer implements SerialPortEventListener {
             }
         }
         leitura = new String(buffer);
-        Janela.jTEntrada.setText(leitura);
+        float pot=funcoes.cuPot(leitura);
+        boolean ebut=funcoes.cuBtn(leitura);
+        boolean eled=funcoes.cuLed(leitura);
+        Janela.jTEntrada.setText(leitura);//
         System.out.println("Dado Recebido: " + leitura);
 
     }
