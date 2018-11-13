@@ -56,7 +56,7 @@ public class Janela extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setCursor(new java.awt.Cursor(java.awt.Cursor.E_RESIZE_CURSOR));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setPreferredSize(new java.awt.Dimension(350, 300));
         setResizable(false);
 
@@ -81,11 +81,6 @@ public class Janela extends javax.swing.JFrame {
 
         jTbut.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jTbut.setText("DESLIGADO");
-        jTbut.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTbutActionPerformed(evt);
-            }
-        });
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
@@ -180,10 +175,6 @@ public class Janela extends javax.swing.JFrame {
             Logger.getLogger(Janela.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jbLEDActionPerformed
-
-    private void jTbutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTbutActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTbutActionPerformed
 
     /**
      * @param args the command line arguments
