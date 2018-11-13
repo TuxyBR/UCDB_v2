@@ -113,7 +113,7 @@ public class SerialServer implements SerialPortEventListener {
         float pot=funcoes.cuPot(leitura);
         boolean ebut=funcoes.cuBtn(leitura);
         boolean eled=funcoes.cuLed(leitura);
-        Janela.jTEntrada.setText(leitura);//
+        Janela.jTEntrada.setText(leitura);//₢°°
         System.out.println("Dado Recebido: " + leitura);
 
     }
