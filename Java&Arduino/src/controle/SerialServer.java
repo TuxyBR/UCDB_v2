@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.TooManyListenersException;
-import javax.xml.bind.DatatypeConverter;
 
 public class SerialServer implements SerialPortEventListener {
 
@@ -21,7 +20,7 @@ public class SerialServer implements SerialPortEventListener {
     public OutputStream saida;
     public SerialPort porta;
     public static String leitura = "";
-    public BatataChulainn funcoes;
+    
 
     public Boolean Run(String comName, Integer comNum) throws PortInUseException {
 
