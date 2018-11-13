@@ -110,12 +110,12 @@ public class SerialServer implements SerialPortEventListener {
             }
         }
         leitura = new String(buffer);
-        float pot=funcoes.cuPot(leitura);
-        boolean ebut=funcoes.cuBtn(leitura);
-        boolean eled=funcoes.cuLed(leitura);
-        Janela.jTEntrada.setText(leitura);//₢°°
-        System.out.println("Dado Recebido: " + leitura);
-
+        String pot=BatataChulainn.cuPot(leitura);
+        String ebut=BatataChulainn.cuBtn(leitura);
+        String eled=BatataChulainn.cuLed(leitura);
+        Janela.jTpot.setText(pot);
+        Janela.jTled.setText(eled);
+        Janela.jTbut.setText(ebut);
     }
 
     public void closeSerial() {

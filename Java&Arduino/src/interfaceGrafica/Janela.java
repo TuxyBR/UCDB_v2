@@ -44,36 +44,25 @@ public class Janela extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jBEnviar = new javax.swing.JButton();
-        jTSaida = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTEntrada = new javax.swing.JTextArea();
         jlLED = new javax.swing.JLabel();
         jbLED = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jbBot = new javax.swing.JLabel();
-        jlPot = new javax.swing.JLabel();
+        jTpot = new javax.swing.JTextField();
+        jTbut = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jTled = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(410, 350));
 
-        jBEnviar.setText("Enviar");
-        jBEnviar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBEnviarActionPerformed(evt);
-            }
-        });
-
-        jTEntrada.setColumns(20);
-        jTEntrada.setRows(5);
-        jScrollPane1.setViewportView(jTEntrada);
-
         jlLED.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jlLED.setText("LED");
 
-        jbLED.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jbLED.setText("LED");
+        jbLED.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jbLED.setText("ON/OFF");
         jbLED.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jbLEDActionPerformed(evt);
@@ -81,91 +70,112 @@ public class Janela extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel2.setText("Potenciometro");
+        jLabel2.setText("Tensão (V):");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("Botao:");
 
-        jbBot.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jbBot.setText("Estado");
+        jTpot.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
-        jlPot.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jlPot.setText("Pot");
+        jTbut.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jTbut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTbutActionPerformed(evt);
+            }
+        });
+
+        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        jLabel3.setText("estado:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 229, Short.MAX_VALUE))
-                            .addComponent(jLabel2))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(37, 37, 37)
-                                .addComponent(jlPot))
-                            .addComponent(jbBot, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                .addGap(32, 32, 32)
+                                .addComponent(jlLED))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jbLED)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jlLED))
+                        .addGap(25, 25, 25)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jbLED, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jTled)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTSaida, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBEnviar)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(48, 48, 48)
+                        .addComponent(jLabel3)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTpot, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1)
+                    .addComponent(jTbut, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
+            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
-                    .addComponent(jlPot))
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jbLED)
-                    .addComponent(jlLED))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jbBot))
+                    .addComponent(jTpot, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTSaida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBEnviar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(7, 7, 7)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jlLED)
+                            .addComponent(jLabel1))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jbLED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTled, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jTbut, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jSeparator2)
+                        .addContainerGap())))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jBEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBEnviarActionPerformed
+    private void jbLEDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbLEDActionPerformed
         try {
             // Enviando dado.
-            serialServer.enviarDados(jTSaida.getText()); // essa eha  entrada na verdade
+            String comp=jTled.getText();
+            String saida;
+            if(comp.equals("DESLIGADO")){
+                saida="1";
+            }
+            else{
+                saida="0";
+            }
+            serialServer.enviarDados(saida); // essa eha  entrada na verdade
         } catch (IOException ex) {
             Logger.getLogger(Janela.class.getName()).log(Level.SEVERE, null, ex);
         } catch (InterruptedException ex) {
             Logger.getLogger(Janela.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
-    }//GEN-LAST:event_jBEnviarActionPerformed
-
-    private void jbLEDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbLEDActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_jbLEDActionPerformed
+
+    private void jTbutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTbutActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTbutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -204,15 +214,15 @@ public class Janela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBEnviar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JScrollPane jScrollPane1;
-    public static javax.swing.JTextArea jTEntrada;
-    private javax.swing.JTextField jTSaida;
-    private javax.swing.JLabel jbBot;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    public static javax.swing.JTextField jTbut;
+    public static javax.swing.JTextField jTled;
+    public static javax.swing.JTextField jTpot;
     private javax.swing.JButton jbLED;
     private javax.swing.JLabel jlLED;
-    private javax.swing.JLabel jlPot;
     // End of variables declaration//GEN-END:variables
 }
