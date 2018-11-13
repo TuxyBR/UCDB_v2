@@ -57,7 +57,7 @@ public class Janela extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.E_RESIZE_CURSOR));
-        setPreferredSize(new java.awt.Dimension(410, 350));
+        setPreferredSize(new java.awt.Dimension(350, 300));
         setResizable(false);
 
         jlLED.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
