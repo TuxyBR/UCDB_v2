@@ -20,7 +20,7 @@ public class BatataChulainn {
     }
     
     public boolean cuBtn (String ser) {
-        return Boolean.parseBoolean(ser.substring(5));
+        return Boolean.parseBoolean(ser.substring(5));//
     }
     
 }
